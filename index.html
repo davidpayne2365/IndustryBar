@@ -145,6 +145,10 @@
         /* Menu Section */
         #menu {
             background-color: #1d1e22; /* Dark charcoal */
+            background-image: linear-gradient(rgba(29, 30, 34, 0.5), rgba(29, 30, 34, 0.5)), url('https://lh3.googleusercontent.com/p/AF1QipMAeEWUbJrVxhXKdReVtH5vFF9suENi9YXoitA3=s1360-w1360-h1020');
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
         }
         
         .menu-container {
@@ -162,14 +166,16 @@
             margin-bottom: 20px;
             color: #d47a37; /* Copper/orange color */
             text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Add text shadow for better readability */
         }
         
         .menu-item {
-            background-color: #25262a; /* Slightly lighter charcoal */
+            background-color: rgba(37, 38, 42, 0.8); /* Slightly lighter charcoal with transparency */
             border-radius: 5px;
             overflow: hidden;
             transition: transform 0.3s;
             border: 1px solid #d47a37; /* Copper/orange color */
+            backdrop-filter: blur(3px); /* Add blur effect for better readability */
         }
         
         .menu-item:hover {
@@ -184,6 +190,7 @@
             font-size: 22px;
             margin-bottom: 10px;
             color: #d47a37; /* Copper/orange color */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Add text shadow for better readability */
         }
         
         .menu-item-description {
@@ -195,6 +202,7 @@
             font-size: 20px;
             font-weight: bold;
             color: #d47a37; /* Copper/orange color */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Add text shadow for better readability */
         }
         
         /* Contact Section */
