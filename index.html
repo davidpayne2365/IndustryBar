@@ -451,6 +451,11 @@
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
+                
+                // Close the mobile menu when clicking a nav link
+                if (window.innerWidth <= 768) {
+                    navLinks.classList.remove('active');
+                }
             });
         });
         
@@ -470,6 +475,16 @@
         
         mobileMenuBtn.addEventListener('click', function() {
             navLinks.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const isClickInsideNav = navLinks.contains(event.target);
+            const isClickOnMenuBtn = mobileMenuBtn.contains(event.target);
+            
+            if (!isClickInsideNav && !isClickOnMenuBtn && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
         });
     </script>
 </body>
