@@ -3,7 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INDUSTRY BAR</title>
+    <title>Industry Bar Evansville | Downtown Cocktails, Pool & Darts | Late Night Bar</title>
+    <meta name="description" content="Industry Bar in downtown Evansville, IN offers craft cocktails, pool, darts, and a relaxed atmosphere. Open late - visit us at 101 SE 1st St or call for more info.">
+    <meta name="keywords" content="Industry Bar, Evansville bar, downtown Evansville, craft cocktails, pool tables, darts, late night bar, Evansville nightlife">
+    <meta name="author" content="Industry Bar">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://industrybar.com/">
+    <meta property="og:title" content="Industry Bar Evansville | Downtown Cocktails & Games">
+    <meta property="og:description" content="Industry Bar in downtown Evansville offers craft cocktails, pool tables, darts, and a relaxed atmosphere. Visit us at 101 SE 1st St.">
+    <meta property="og:image" content="https://scontent.ffar1-2.fna.fbcdn.net/v/t39.30808-6/458302910_122127337796359299_8395567893590239252_n.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://industrybar.com/">
+    <meta property="twitter:title" content="Industry Bar Evansville | Downtown Cocktails & Games">
+    <meta property="twitter:description" content="Industry Bar in downtown Evansville offers craft cocktails, pool tables, darts, and a relaxed atmosphere. Visit us at 101 SE 1st St.">
+    <meta property="twitter:image" content="https://scontent.ffar1-2.fna.fbcdn.net/v/t39.30808-6/458302910_122127337796359299_8395567893590239252_n.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="https://scontent.ffar1-2.fna.fbcdn.net/v/t39.30808-6/458302910_122127337796359299_8395567893590239252_n.jpg">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BarOrPub",
+      "name": "Industry Bar",
+      "image": "https://scontent.ffar1-2.fna.fbcdn.net/v/t39.30808-6/458302910_122127337796359299_8395567893590239252_n.jpg",
+      "url": "https://industrybar.com",
+      "telephone": "",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "101 SE 1st St",
+        "addressLocality": "Evansville",
+        "addressRegion": "IN",
+        "postalCode": "47708",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.96876610096242,
+        "longitude": -87.57614232464056
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Sunday"],
+          "opens": "16:00",
+          "closes": "03:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "14:00",
+          "closes": "03:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "12:00",
+          "closes": "03:00"
+        }
+      ],
+      "servesCuisine": "Cocktails",
+      "priceRange": "$",
+      "menu": "https://industrybar.com/#menu"
+    }
+    </script>
     <style>
         /* Base styles */
         * {
@@ -312,6 +380,13 @@
         
         /* Media Queries */
         @media (max-width: 768px) {
+            /* Keep fixed attachment on mobile for desired effect, but fix potential issues */
+            html, body {
+                height: 100%;
+                overflow: auto;
+                overscroll-behavior-y: none; /* Prevent bounce effects on some mobile browsers */
+            }
+            
             .nav-links {
                 position: absolute;
                 top: 80px;
