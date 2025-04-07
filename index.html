@@ -380,10 +380,20 @@
         
         /* Media Queries */
         @media (max-width: 768px) {
-            /* Keep fixed attachment on mobile for desired effect, but fix potential issues */
+            /* Return to original fixed backgrounds */
+            header {
+                background-attachment: fixed; /* Keep fixed for parallax effect */
+            }
+            
+            #menu {
+                background-attachment: fixed; /* Keep fixed for parallax effect */
+            }
+            
+            /* Fix for image transition issues */
             html, body {
                 height: 100%;
-                overflow: auto;
+                overflow-x: hidden;
+                -webkit-overflow-scrolling: touch; /* Improve smooth scrolling on iOS */
                 overscroll-behavior-y: none; /* Prevent bounce effects on some mobile browsers */
             }
             
